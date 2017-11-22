@@ -1,3 +1,5 @@
 language: objective-c
+osx_image: xcode9.1
 xcode_project: MoneyExample.xcodeproj
-xcode_scheme: MoneyExampleTests
+xcode_scheme: MoneyExample
+xcode_sdk: iphonesimulator
