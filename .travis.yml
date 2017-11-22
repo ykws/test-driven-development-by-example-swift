@@ -1,4 +1,2 @@
 language: objective-c
-osx_image: xcode9.1
-xcode_project: MoneyExample.xcodeproj
-xcode_scheme: MoneyExample
+script: xcodebuild test -project MoneyExample.xcodeproj -scheme MoneyExample -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.1' ONLY_ACTIVE_ARCH=NO
