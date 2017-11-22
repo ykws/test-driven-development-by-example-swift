@@ -5,3 +5,8 @@
 [![CodeCov](https://codecov.io/gh/ykws/test-driven-development-by-example-swift/branch/master/graph/badge.svg)](https://codecov.io/gh/ykws/test-driven-development-by-example-swift)
 
 written by Swift
+
+## TODO
+
+- [ ] $5 + 10 CHF = $10(rate=2:1)
+- [ ] $5 * 2 = $10
