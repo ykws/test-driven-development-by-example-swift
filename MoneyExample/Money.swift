@@ -18,14 +18,14 @@ class Money: Equatable {
   }
 
   func times(_ multiplier: Int) -> Money {
-    return Money.init(amout: amount * multiplier)
+    return Money.init(amount: amount * multiplier)
   }
 
-  static func dollar(amount: Int) {
+  static func dollar(amount: Int) -> Dollar {
     return Dollar.init(amount: amount)
   }
 
-  static func franc(amount: Int) {
+  static func franc(amount: Int) -> Franc {
     return Franc.init(amount: amount)
   }
 
