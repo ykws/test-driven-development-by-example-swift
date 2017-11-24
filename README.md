@@ -9,7 +9,7 @@ written by Swift
 ## TODO
 
 - [ ] $5 + 10 CHF = $10(rate=2:1)
-- [ ] $5 * 2 = $10
+- [x] $5 * 2 = $10
 - [ ] private `amount`
 - [ ] `Dollar` side effect?
 - [ ] `Money` rounding?
