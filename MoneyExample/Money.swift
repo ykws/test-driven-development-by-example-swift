@@ -6,7 +6,7 @@
 //  Copyright © 2017 ykws. All rights reserved.
 //
 
-class Money: Equatable {
+class Money: Equatable, Expression {
   let amount: Int
   let currency: String
 
@@ -23,11 +23,15 @@ class Money: Equatable {
     return Money.init(amount: amount * multiplier, currency: currency)
   }
 
-  static func dollar(amount: Int) -> Money {
+  func plus(_ addend: Money) -> Expression {
+    return Money.init(amount: amount + addend.amount, currency: currency)
+  }
+
+  static func dollar(_ amount: Int) -> Money {
     return Money.init(amount: amount, currency: "USD")
   }
 
-  static func franc(amount: Int) -> Money {
+  static func franc(_ amount: Int) -> Money {
     return Money.init(amount: amount, currency: "CHF")
   }
 

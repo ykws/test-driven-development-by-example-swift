@@ -9,18 +9,4 @@ written by Swift
 ## TODO
 
 - [ ] $5 + 10 CHF = $10(rate=2:1)
-- [x] $5 * 2 = $10
-- [x] private `amount`
-- [x] `Dollar` side effect?
-- [ ] `Money` rounding?
-- [x] ==
-- [ ] hashCode()
-- [ ] Compare nil
-- [ ] Compare other object
-- [x] 5 CHF * 2 = 10 CHF
-- [x] Duplicate `Dollar` and `Franc`
-- [x] Generalize equals
-- [x] Generalize times
-- [x] Compare `Dollar` and `Franc`
-- [x] Concept of Currency
-- [x] Remove testFrancMultiplication?
+- [ ] $5 + $5 = $10
