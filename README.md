@@ -21,3 +21,4 @@ written by Swift
 - [ ] Duplicate `Dollar` and `Franc`
 - [x] Generalize equals
 - [ ] Generalize times
+- [ ] Compare `Dollar` and `Franc`
