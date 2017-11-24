@@ -22,23 +22,23 @@ class MoneyExampleTests: XCTestCase {
   }
 
   func testMultiplication() {
-    let five: Dollar = Dollar.init(amount: 5)
-    XCTAssertEqual(Dollar.init(amount: 10), five.times(2))
-    XCTAssertEqual(Dollar.init(amount: 15), five.times(3))
+    let five: Money = Money.dollar(amount: 5)
+    XCTAssertEqual(Money.dollar(amount: 10), five.times(2))
+    XCTAssertEqual(Money.dollar(amount: 15), five.times(3))
   }
 
   func testEquality() {
-    XCTAssertTrue(Dollar.init(amount: 5) == Dollar.init(amount: 5))
-    XCTAssertFalse(Dollar.init(amount: 5) == Dollar.init(amount: 6))
-    XCTAssertTrue(Franc.init(amount: 5) == Franc.init(amount: 5))
-    XCTAssertFalse(Franc.init(amount: 5) == Franc.init(amount: 6))
-    XCTAssertFalse(Franc.init(amount: 5) == Dollar.init(amount: 5))
+    XCTAssertTrue(Money.dollar(amount: 5) == Money.dollar(amount: 5))
+    XCTAssertFalse(Money.dollar(amount: 5) == Money.dollar(amount: 6))
+    XCTAssertTrue(Money.franc(amount: 5) == Money.franc(amount: 5))
+    XCTAssertFalse(Money.franc(amount: 5) == Money.franc(amount: 6))
+    XCTAssertFalse(Money.franc(amount: 5) == Money.dollar(amount: 5))
   }
 
   func testFrancMultiplication() {
-    let five: Franc = Franc.init(amount: 5)
-    XCTAssertEqual(Franc.init(amount: 10), five.times(2))
-    XCTAssertEqual(Franc.init(amount: 15), five.times(3))
+    let five: Money = Money.franc(amount: 5)
+    XCTAssertEqual(Money.franc(amount: 10), five.times(2))
+    XCTAssertEqual(Money.franc(amount: 15), five.times(3))
   }
 
 }

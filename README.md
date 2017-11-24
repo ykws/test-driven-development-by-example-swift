@@ -23,3 +23,4 @@ written by Swift
 - [ ] Generalize times
 - [x] Compare `Dollar` and `Franc`
 - [ ] Concept of Currency
+- [ ] Remove testFrancMultiplication?

@@ -17,4 +17,16 @@ class Money: Equatable {
     return lhs.amount == rhs.amount && type(of: lhs) == type(of: rhs)
   }
 
+  func times(_ multiplier: Int) -> Money {
+    return Money.init(amout: amount * multiplier)
+  }
+
+  static func dollar(amount: Int) {
+    return Dollar.init(amount: amount)
+  }
+
+  static func franc(amount: Int) {
+    return Franc.init(amount: amount)
+  }
+
 }

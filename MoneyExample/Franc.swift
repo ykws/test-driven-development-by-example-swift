@@ -8,7 +8,7 @@
 
 class Franc: Money {
 
-  func times(_ multiplier: Int) -> Franc {
+  override func times(_ multiplier: Int) -> Money {
     return Franc.init(amount: self.amount * multiplier)
   }
 
