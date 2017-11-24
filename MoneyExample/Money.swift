@@ -24,7 +24,7 @@ class Money: Equatable, Expression {
   }
 
   func plus(_ addend: Money) -> Expression {
-    return Money.init(amount: amount + addend.amount, currency: currency)
+    return Sum.init(augend: self, addend: addend)
   }
 
   static func dollar(_ amount: Int) -> Money {
