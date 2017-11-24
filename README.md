@@ -15,3 +15,5 @@ written by Swift
 - [ ] `Money` rounding?
 - [x] ==
 - [ ] hashCode()
+- [ ] Compare nil
+- [ ] Compare other object
