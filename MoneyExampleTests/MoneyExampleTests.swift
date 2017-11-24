@@ -22,11 +22,11 @@ class MoneyExampleTests: XCTestCase {
   }
 
   func testMultiplication() {
-    var five: Dollar = Dollar.init(amount: 5);
-    five.times(2);
-    XCTAssertEqual(10, five.amount, "");
-    five.times(3);
-    XCTAssertEqual(15, five.amount, "");
+    let five: Dollar = Dollar.init(amount: 5);
+    var product: Dollar = five.times(2);
+    XCTAssertEqual(10, product.amount, "");
+    product = five.times(3);
+    XCTAssertEqual(15, product.amount, "");
   }
 
 }

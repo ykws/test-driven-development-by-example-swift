@@ -13,7 +13,7 @@ struct Dollar {
     self.amount = amount
   }
   
-  mutating func times(_ multiplier: Int) {
-    self.amount *= multiplier
+  func times(_ multiplier: Int) -> Dollar {
+    return Dollar.init(amount: self.amount * multiplier)
   }
 }

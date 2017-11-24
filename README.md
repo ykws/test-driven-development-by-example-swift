@@ -11,5 +11,5 @@ written by Swift
 - [ ] $5 + 10 CHF = $10(rate=2:1)
 - [x] $5 * 2 = $10
 - [ ] private `amount`
-- [ ] `Dollar` side effect?
+- [x] `Dollar` side effect?
 - [ ] `Money` rounding?
