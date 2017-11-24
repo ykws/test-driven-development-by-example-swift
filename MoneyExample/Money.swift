@@ -27,11 +27,11 @@ class Money: Equatable {
     return Money.init(amount: amount + addend.amount, currency: currency)
   }
 
-  static func dollar(amount: Int) -> Money {
+  static func dollar(_ amount: Int) -> Money {
     return Money.init(amount: amount, currency: "USD")
   }
 
-  static func franc(amount: Int) -> Money {
+  static func franc(_ amount: Int) -> Money {
     return Money.init(amount: amount, currency: "CHF")
   }
 
