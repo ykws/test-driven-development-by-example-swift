@@ -22,7 +22,7 @@ class MoneyExampleTests: XCTestCase {
   }
 
   func testMultiplication() {
-    let five: Dollar = Dollar.init(amount: 5);
+    var five: Dollar = Dollar.init(amount: 5);
     five.times(2);
     XCTAssertEqual(10, five.amount, "");
   }
