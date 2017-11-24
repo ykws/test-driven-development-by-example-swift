@@ -14,10 +14,6 @@
 		1FAE09F71FC5A3D300E13EB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAE09F51FC5A3D300E13EB1 /* LaunchScreen.storyboard */; };
 		1FAE0A021FC5A3D300E13EB1 /* MoneyExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE0A011FC5A3D300E13EB1 /* MoneyExampleTests.swift */; };
 		1FAE0A0D1FC5A3D300E13EB1 /* MoneyExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE0A0C1FC5A3D300E13EB1 /* MoneyExampleUITests.swift */; };
-		1FAE0A1B1FC5AC6200E13EB1 /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE0A1A1FC5AC6200E13EB1 /* Dollar.swift */; };
-		1FAE0A1C1FC5AC6200E13EB1 /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE0A1A1FC5AC6200E13EB1 /* Dollar.swift */; };
-		1FAE0A1E1FC7AFF100E13EB1 /* Franc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE0A1D1FC7AFF100E13EB1 /* Franc.swift */; };
-		1FAE0A1F1FC7AFF100E13EB1 /* Franc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE0A1D1FC7AFF100E13EB1 /* Franc.swift */; };
 		1FAE0A211FC7B17D00E13EB1 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE0A201FC7B17D00E13EB1 /* Money.swift */; };
 		1FAE0A221FC7B17D00E13EB1 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE0A201FC7B17D00E13EB1 /* Money.swift */; };
 /* End PBXBuildFile section */
@@ -53,8 +49,6 @@
 		1FAE0A081FC5A3D300E13EB1 /* MoneyExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAE0A0C1FC5A3D300E13EB1 /* MoneyExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyExampleUITests.swift; sourceTree = "<group>"; };
 		1FAE0A0E1FC5A3D300E13EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1FAE0A1A1FC5AC6200E13EB1 /* Dollar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dollar.swift; sourceTree = "<group>"; };
-		1FAE0A1D1FC7AFF100E13EB1 /* Franc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Franc.swift; sourceTree = "<group>"; };
 		1FAE0A201FC7B17D00E13EB1 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,8 +106,6 @@
 				1FAE09F31FC5A3D300E13EB1 /* Assets.xcassets */,
 				1FAE09F51FC5A3D300E13EB1 /* LaunchScreen.storyboard */,
 				1FAE09F81FC5A3D300E13EB1 /* Info.plist */,
-				1FAE0A1A1FC5AC6200E13EB1 /* Dollar.swift */,
-				1FAE0A1D1FC7AFF100E13EB1 /* Franc.swift */,
 				1FAE0A201FC7B17D00E13EB1 /* Money.swift */,
 			);
 			path = MoneyExample;
@@ -271,10 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FAE0A1E1FC7AFF100E13EB1 /* Franc.swift in Sources */,
 				1FAE0A211FC7B17D00E13EB1 /* Money.swift in Sources */,
 				1FAE09EF1FC5A3D300E13EB1 /* ViewController.swift in Sources */,
-				1FAE0A1B1FC5AC6200E13EB1 /* Dollar.swift in Sources */,
 				1FAE09ED1FC5A3D300E13EB1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,10 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FAE0A1F1FC7AFF100E13EB1 /* Franc.swift in Sources */,
 				1FAE0A021FC5A3D300E13EB1 /* MoneyExampleTests.swift in Sources */,
 				1FAE0A221FC7B17D00E13EB1 /* Money.swift in Sources */,
-				1FAE0A1C1FC5AC6200E13EB1 /* Dollar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

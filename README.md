@@ -18,9 +18,9 @@ written by Swift
 - [ ] Compare nil
 - [ ] Compare other object
 - [x] 5 CHF * 2 = 10 CHF
-- [ ] Duplicate `Dollar` and `Franc`
+- [x] Duplicate `Dollar` and `Franc`
 - [x] Generalize equals
 - [x] Generalize times
 - [x] Compare `Dollar` and `Franc`
 - [x] Concept of Currency
-- [ ] Remove testFrancMultiplication?
+- [x] Remove testFrancMultiplication?
