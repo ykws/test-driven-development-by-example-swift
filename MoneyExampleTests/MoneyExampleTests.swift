@@ -38,4 +38,8 @@ class MoneyExampleTests: XCTestCase {
     XCTAssertEqual("CHF", Money.franc(amount: 1).currency);
   }
 
+  func testSimpleAddition() {
+    let sum: Money = Money.dollar(amount: 5).plus(Money.dollar(amount: 5))
+    XCTAssertEqual(Money.dollar(amount: 10), sum)
+  }
 }

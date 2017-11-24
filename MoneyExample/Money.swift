@@ -23,6 +23,10 @@ class Money: Equatable {
     return Money.init(amount: amount * multiplier, currency: currency)
   }
 
+  func plus(_ addend: Money) -> Money {
+    return Money.init(amount: amount + addend.amount, currency: currency)
+  }
+
   static func dollar(amount: Int) -> Money {
     return Money.init(amount: amount, currency: "USD")
   }
