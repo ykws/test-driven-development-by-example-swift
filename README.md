@@ -13,3 +13,5 @@ written by Swift
 - [ ] private `amount`
 - [x] `Dollar` side effect?
 - [ ] `Money` rounding?
+- [ ] equals()
+- [ ] hashCode()
