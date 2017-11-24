@@ -19,5 +19,5 @@ written by Swift
 - [ ] Compare other object
 - [x] 5 CHF * 2 = 10 CHF
 - [ ] Duplicate `Dollar` and `Franc`
-- [ ] Generalize equals
+- [x] Generalize equals
 - [ ] Generalize times

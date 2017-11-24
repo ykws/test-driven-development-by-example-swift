@@ -6,18 +6,10 @@
 //  Copyright © 2017 ykws. All rights reserved.
 //
 
-class Dollar: Equatable {
-  private var amount: Int
-  
-  init(amount: Int) {
-    self.amount = amount
-  }
-  
+class Dollar: Money {
+
   func times(_ multiplier: Int) -> Dollar {
-    return Dollar.init(amount: self.amount * multiplier)
+    return Dollar.init(amount: super.amount * multiplier)
   }
-  
-  static func == (lhs: Dollar, rhs: Dollar) -> Bool {
-    return lhs.amount == rhs.amount
-  }
+
 }
