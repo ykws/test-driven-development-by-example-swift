@@ -31,6 +31,7 @@ class MoneyExampleTests: XCTestCase {
   
   func testEquality() {
     XCTAssertTrue(Dollar.init(amount: 5) == Dollar.init(amount: 5))
+    XCTAssertFalse(Dollar.init(amount: 5) == Dollar.init(amount: 6))
   }
 
 }
