@@ -18,6 +18,6 @@ class Dollar: Equatable {
   }
   
   static func == (lhs: Dollar, rhs: Dollar) -> Bool {
-    return true
+    return lhs.amount == rhs.amount
   }
 }
