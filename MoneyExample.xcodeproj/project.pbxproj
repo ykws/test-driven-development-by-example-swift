@@ -103,7 +103,6 @@
 		1FAE09EB1FC5A3D300E13EB1 /* MoneyExample */ = {
 			isa = PBXGroup;
 			children = (
-				1FAE0A1D1FC7AFF100E13EB1 /* Franc.swift */,
 				1FAE09EC1FC5A3D300E13EB1 /* AppDelegate.swift */,
 				1FAE09EE1FC5A3D300E13EB1 /* ViewController.swift */,
 				1FAE09F01FC5A3D300E13EB1 /* Main.storyboard */,
@@ -111,6 +110,7 @@
 				1FAE09F51FC5A3D300E13EB1 /* LaunchScreen.storyboard */,
 				1FAE09F81FC5A3D300E13EB1 /* Info.plist */,
 				1FAE0A1A1FC5AC6200E13EB1 /* Dollar.swift */,
+				1FAE0A1D1FC7AFF100E13EB1 /* Franc.swift */,
 			);
 			path = MoneyExample;
 			sourceTree = "<group>";
