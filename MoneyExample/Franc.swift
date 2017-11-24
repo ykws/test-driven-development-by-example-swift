@@ -12,4 +12,8 @@ class Franc: Money {
     return Franc.init(amount: self.amount * multiplier)
   }
 
+  override func currency() -> String {
+    return "CHF"
+  }
+
 }

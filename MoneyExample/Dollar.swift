@@ -12,4 +12,8 @@ class Dollar: Money {
     return Dollar.init(amount: super.amount * multiplier)
   }
 
+  override func currency() -> String {
+    return "USD"
+  }
+
 }
