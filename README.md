@@ -17,4 +17,7 @@ written by Swift
 - [ ] hashCode()
 - [ ] Compare nil
 - [ ] Compare other object
-- [ ] 5 CHF * 2 = 10 CHF
+- [x] 5 CHF * 2 = 10 CHF
+- [ ] Duplicate `Dollar` and `Franc`
+- [ ] Generalize equals
+- [ ] Generalize times

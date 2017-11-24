@@ -16,6 +16,8 @@
 		1FAE0A0D1FC5A3D300E13EB1 /* MoneyExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE0A0C1FC5A3D300E13EB1 /* MoneyExampleUITests.swift */; };
 		1FAE0A1B1FC5AC6200E13EB1 /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE0A1A1FC5AC6200E13EB1 /* Dollar.swift */; };
 		1FAE0A1C1FC5AC6200E13EB1 /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE0A1A1FC5AC6200E13EB1 /* Dollar.swift */; };
+		1FAE0A1E1FC7AFF100E13EB1 /* Franc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE0A1D1FC7AFF100E13EB1 /* Franc.swift */; };
+		1FAE0A1F1FC7AFF100E13EB1 /* Franc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE0A1D1FC7AFF100E13EB1 /* Franc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,7 @@
 		1FAE0A0C1FC5A3D300E13EB1 /* MoneyExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyExampleUITests.swift; sourceTree = "<group>"; };
 		1FAE0A0E1FC5A3D300E13EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FAE0A1A1FC5AC6200E13EB1 /* Dollar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dollar.swift; sourceTree = "<group>"; };
+		1FAE0A1D1FC7AFF100E13EB1 /* Franc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Franc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,7 @@
 		1FAE09EB1FC5A3D300E13EB1 /* MoneyExample */ = {
 			isa = PBXGroup;
 			children = (
+				1FAE0A1D1FC7AFF100E13EB1 /* Franc.swift */,
 				1FAE09EC1FC5A3D300E13EB1 /* AppDelegate.swift */,
 				1FAE09EE1FC5A3D300E13EB1 /* ViewController.swift */,
 				1FAE09F01FC5A3D300E13EB1 /* Main.storyboard */,
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FAE0A1E1FC7AFF100E13EB1 /* Franc.swift in Sources */,
 				1FAE09EF1FC5A3D300E13EB1 /* ViewController.swift in Sources */,
 				1FAE0A1B1FC5AC6200E13EB1 /* Dollar.swift in Sources */,
 				1FAE09ED1FC5A3D300E13EB1 /* AppDelegate.swift in Sources */,
@@ -273,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FAE0A1F1FC7AFF100E13EB1 /* Franc.swift in Sources */,
 				1FAE0A021FC5A3D300E13EB1 /* MoneyExampleTests.swift in Sources */,
 				1FAE0A1C1FC5AC6200E13EB1 /* Dollar.swift in Sources */,
 			);
