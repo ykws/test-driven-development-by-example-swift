@@ -6,7 +6,7 @@
 //  Copyright © 2017 ykws. All rights reserved.
 //
 
-struct Dollar {
+class Dollar: Equatable {
   var amount: Int
   
   init(amount: Int) {
@@ -15,5 +15,9 @@ struct Dollar {
   
   func times(_ multiplier: Int) -> Dollar {
     return Dollar.init(amount: self.amount * multiplier)
+  }
+  
+  static func == (lhs: Dollar, rhs: Dollar) -> Bool {
+    return true
   }
 }
