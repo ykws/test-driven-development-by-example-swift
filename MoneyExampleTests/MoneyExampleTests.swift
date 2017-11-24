@@ -39,7 +39,10 @@ class MoneyExampleTests: XCTestCase {
   }
 
   func testSimpleAddition() {
-    let sum: Money = Money.dollar(5).plus(Money.dollar(5))
-    XCTAssertEqual(Money.dollar(10), sum)
+    let five: Money = Money.dollar(5)
+    let sum: Expression = five.plus(five)
+    let bank: Bank = Bank.init()
+    let reduced: Money = bank.reduce(source: sum, to: "USD")
+    XCTAssertEqual(Money.dollar(10), reduced)
   }
 }
