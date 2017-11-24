@@ -45,4 +45,8 @@ class MoneyExampleTests: XCTestCase {
     XCTAssertEqual("USD", Money.dollar(amount: 1).currency);
     XCTAssertEqual("CHF", Money.franc(amount: 1).currency);
   }
+
+  func testDifferentClassEquality() {
+    XCTAssertTrue(Money.init(amount: 10, currency: "CHF") == Franc.init(amount: 10, currency: "CHF"))
+  }
 }
