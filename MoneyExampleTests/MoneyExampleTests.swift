@@ -30,15 +30,7 @@ class MoneyExampleTests: XCTestCase {
   func testEquality() {
     XCTAssertTrue(Money.dollar(amount: 5) == Money.dollar(amount: 5))
     XCTAssertFalse(Money.dollar(amount: 5) == Money.dollar(amount: 6))
-    XCTAssertTrue(Money.franc(amount: 5) == Money.franc(amount: 5))
-    XCTAssertFalse(Money.franc(amount: 5) == Money.franc(amount: 6))
     XCTAssertFalse(Money.franc(amount: 5) == Money.dollar(amount: 5))
-  }
-
-  func testFrancMultiplication() {
-    let five: Money = Money.franc(amount: 5)
-    XCTAssertEqual(Money.franc(amount: 10), five.times(2))
-    XCTAssertEqual(Money.franc(amount: 15), five.times(3))
   }
 
   func testCurrency() {
@@ -46,7 +38,4 @@ class MoneyExampleTests: XCTestCase {
     XCTAssertEqual("CHF", Money.franc(amount: 1).currency);
   }
 
-  func testDifferentClassEquality() {
-    XCTAssertTrue(Money.init(amount: 10, currency: "CHF") == Franc.init(amount: 10, currency: "CHF"))
-  }
 }
