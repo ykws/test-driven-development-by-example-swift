@@ -15,10 +15,6 @@ class Money: Equatable, Expression {
     self.currency = currency
   }
 
-  static func == (lhs: Money, rhs: Money) -> Bool {
-    return lhs.amount == rhs.amount && lhs.currency == rhs.currency
-  }
-
   func times(_ multiplier: Int) -> Money {
     return Money.init(amount: amount * multiplier, currency: currency)
   }
@@ -26,6 +22,20 @@ class Money: Equatable, Expression {
   func plus(_ addend: Money) -> Expression {
     return Sum.init(self, addend)
   }
+
+  // MARK: - Equatable
+
+  static func == (lhs: Money, rhs: Money) -> Bool {
+    return lhs.amount == rhs.amount && lhs.currency == rhs.currency
+  }
+
+  // MARK: - Expression
+
+  func reduce(_ to: String) -> Money {
+    return self
+  }
+
+  // MARK: - Factory Method
 
   static func dollar(_ amount: Int) -> Money {
     return Money.init(amount: amount, currency: "USD")
