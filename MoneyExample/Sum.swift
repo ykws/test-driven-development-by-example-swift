@@ -15,4 +15,9 @@ struct Sum: Expression {
     self.addend = addend
   }
 
+  func reduce(to: String) -> Money {
+    let amount: Int = augend.amount + addend.amount
+    return Money.init(amount: amount, currency: to)
+  }
+
 }

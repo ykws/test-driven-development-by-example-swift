@@ -10,8 +10,7 @@ class Bank {
 
   func reduce(source: Expression, to: String) -> Money {
     let sum: Sum = source as! Sum
-    let amount: Int = sum.augend.amount + sum.addend.amount
-    return Money.init(amount: amount, currency: to)
+    return sum.reduce(to: to)
   }
 
 }

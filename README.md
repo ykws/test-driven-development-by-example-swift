@@ -11,3 +11,4 @@ written by Swift
 - [ ] $5 + 10 CHF = $10(rate=2:1)
 - [ ] $5 + $5 = $10
 - [ ] $5 + $5 return `Money`
+- [ ] Bank.reduce(Money)
