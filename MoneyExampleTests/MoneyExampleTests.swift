@@ -53,4 +53,11 @@ class MoneyExampleTests: XCTestCase {
     XCTAssertEqual(five, sum.augend)
     XCTAssertEqual(five, sum.addend)
   }
+
+  func testReduceSum() {
+    let sum: Expression = Sum.init(Money.dollar(3), Money.dollar(4))
+    let bank: Bank = Bank.init()
+    let result: Money = bank.reduce(source: sum, to: "USD")
+    XCTAssertEqual(Money.dollar(7), result)
+  }
 }

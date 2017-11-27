@@ -10,7 +10,7 @@ struct Sum: Expression {
   let augend: Money
   let addend: Money
 
-  init(augend: Money, addend: Money) {
+  init(_ augend: Money, _ addend: Money) {
     self.augend = augend
     self.addend = addend
   }
