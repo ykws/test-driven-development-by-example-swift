@@ -20,7 +20,7 @@ struct Sum {
 extension Sum: Expression {
 
   func plus(_ addend: Expression) -> Expression{
-    return self
+    return Sum.init(self, addend)
   }
 
   func reduce(bank: Bank, to: String) -> Money {
