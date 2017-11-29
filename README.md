@@ -5,14 +5,3 @@
 [![CodeCov](https://codecov.io/gh/ykws/test-driven-development-by-example-swift/branch/master/graph/badge.svg)](https://codecov.io/gh/ykws/test-driven-development-by-example-swift)
 
 written by Swift
-
-## TODO
-
-- [x] $5 + 10 CHF = $10(rate=2:1)
-- [x] $5 + $5 = $10
-- [ ] $5 + $5 return `Money`
-- [x] Bank.reduce(Money)
-- [x] Convert `Money`
-- [x] Reduce(Bank, String)
-- [x] Sum.plus
-- [x] Expression.times
