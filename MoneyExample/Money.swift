@@ -31,8 +31,8 @@ class Money: Equatable, Expression {
 
   // MARK: - Expression
 
-  func reduce(_ to: String) -> Money {
-    let rate: Int = (currency == "CHF" && to == "USD") ? 2 : 1
+  func reduce(bank: Bank, to: String) -> Money {
+    let rate: Int = bank.rate(from: currency, to: to)
     return Money.init(amount: amount / rate, currency: to)
   }
 
