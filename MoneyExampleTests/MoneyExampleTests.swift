@@ -77,4 +77,14 @@ class MoneyExampleTests: XCTestCase {
   func testIdentityRate() {
     XCTAssertEqual(1, Bank.init().rate(from: "USD", to: "USD"))
   }
+
+  func testMixedAddition() {
+    let fiveBucks: Expression = Money.dollar(5)
+    let tenFrancs: Expression = Money.franc(10)
+    let bank: Bank = Bank.init()
+    bank.addRate(from: "CHF", to: "USD", rate: 2)
+    let result: Money = bank.reduce(source: fiveBucks.plus(tenFrancs), to: "USD")
+    XCTAssertEqual(Money.dollar(10), result)
+  }
+
 }
