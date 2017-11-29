@@ -19,6 +19,11 @@ struct Sum {
 
 extension Sum: Expression {
 
+  func times(_ multiplier: Int) -> Expression {
+    return Sum.init(augend.times(multiplier),
+                    addend.times(multiplier))
+  }
+
   func plus(_ addend: Expression) -> Expression{
     return Sum.init(self, addend)
   }

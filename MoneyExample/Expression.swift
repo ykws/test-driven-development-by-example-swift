@@ -7,6 +7,7 @@
 //
 
 protocol Expression {
+  func times(_ multiplier: Int) -> Expression
   func plus(_ addend: Expression) -> Expression
   func reduce(bank: Bank, to: String) -> Money
 }
