@@ -50,8 +50,8 @@ class MoneyExampleTests: XCTestCase {
     let five: Money = Money.dollar(5)
     let result: Expression = five.plus(five)
     let sum: Sum = result as! Sum
-    XCTAssertEqual(five, sum.augend)
-    XCTAssertEqual(five, sum.addend)
+    XCTAssertEqual(five, sum.augend as! Money)
+    XCTAssertEqual(five, sum.addend as! Money)
   }
 
   func testReduceSum() {
@@ -79,8 +79,8 @@ class MoneyExampleTests: XCTestCase {
   }
 
   func testMixedAddition() {
-    let fiveBucks: Expression = Money.dollar(5)
-    let tenFrancs: Expression = Money.franc(10)
+    let fiveBucks: Money = Money.dollar(5)
+    let tenFrancs: Money = Money.franc(10)
     let bank: Bank = Bank.init()
     bank.addRate(from: "CHF", to: "USD", rate: 2)
     let result: Money = bank.reduce(source: fiveBucks.plus(tenFrancs), to: "USD")
