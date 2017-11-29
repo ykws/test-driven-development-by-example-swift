@@ -12,4 +12,7 @@ class Bank {
     return source.reduce(to)
   }
 
+  func addRate(from: String, to: String, rate: Int) {
+  }
+
 }
