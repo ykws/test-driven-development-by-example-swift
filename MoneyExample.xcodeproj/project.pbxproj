@@ -20,6 +20,8 @@
 		1FAE0A281FC7F00A00E13EB1 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE0A261FC7F00A00E13EB1 /* Bank.swift */; };
 		1FAE0A2A1FC7F06200E13EB1 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE0A291FC7F06200E13EB1 /* Expression.swift */; };
 		1FAE0A2B1FC7F06200E13EB1 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE0A291FC7F06200E13EB1 /* Expression.swift */; };
+		1FAE0A2D1FC814C400E13EB1 /* Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE0A2C1FC814C400E13EB1 /* Sum.swift */; };
+		1FAE0A2E1FC814C400E13EB1 /* Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE0A2C1FC814C400E13EB1 /* Sum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,7 @@
 		1FAE0A201FC7B17D00E13EB1 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		1FAE0A261FC7F00A00E13EB1 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		1FAE0A291FC7F06200E13EB1 /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		1FAE0A2C1FC814C400E13EB1 /* Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,7 @@
 				1FAE0A201FC7B17D00E13EB1 /* Money.swift */,
 				1FAE0A261FC7F00A00E13EB1 /* Bank.swift */,
 				1FAE0A291FC7F06200E13EB1 /* Expression.swift */,
+				1FAE0A2C1FC814C400E13EB1 /* Sum.swift */,
 			);
 			path = MoneyExample;
 			sourceTree = "<group>";
@@ -276,6 +280,7 @@
 				1FAE09EF1FC5A3D300E13EB1 /* ViewController.swift in Sources */,
 				1FAE09ED1FC5A3D300E13EB1 /* AppDelegate.swift in Sources */,
 				1FAE0A2A1FC7F06200E13EB1 /* Expression.swift in Sources */,
+				1FAE0A2D1FC814C400E13EB1 /* Sum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FAE0A2E1FC814C400E13EB1 /* Sum.swift in Sources */,
 				1FAE0A281FC7F00A00E13EB1 /* Bank.swift in Sources */,
 				1FAE0A021FC5A3D300E13EB1 /* MoneyExampleTests.swift in Sources */,
 				1FAE0A221FC7B17D00E13EB1 /* Money.swift in Sources */,
