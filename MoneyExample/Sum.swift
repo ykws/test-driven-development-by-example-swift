@@ -17,7 +17,7 @@ struct Sum: Expression {
 
   // MARK: - Expression
 
-  func reduce(_ to: String) -> Money {
+  func reduce(bank: Bank, to: String) -> Money {
     let amount: Int = augend.amount + addend.amount
     return Money.init(amount: amount, currency: to)
   }
