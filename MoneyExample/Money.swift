@@ -6,7 +6,7 @@
 //  Copyright © 2017 ykws. All rights reserved.
 //
 
-class Money: Equatable, Expression {
+class Money: Equatable {
   let amount: Int
   let currency: String
 
@@ -19,21 +19,10 @@ class Money: Equatable, Expression {
     return Money.init(amount: amount * multiplier, currency: currency)
   }
 
-  func plus(_ addend: Money) -> Expression {
-    return Sum.init(self, addend)
-  }
-
   // MARK: - Equatable
 
   static func == (lhs: Money, rhs: Money) -> Bool {
     return lhs.amount == rhs.amount && lhs.currency == rhs.currency
-  }
-
-  // MARK: - Expression
-
-  func reduce(bank: Bank, to: String) -> Money {
-    let rate: Int = bank.rate(from: currency, to: to)
-    return Money.init(amount: amount / rate, currency: to)
   }
 
   // MARK: - Factory Method
@@ -44,6 +33,19 @@ class Money: Equatable, Expression {
 
   static func franc(_ amount: Int) -> Money {
     return Money.init(amount: amount, currency: "CHF")
+  }
+
+}
+
+extension Money: Expression {
+
+  func plus(_ addend: Expression) -> Expression {
+    return Sum.init(self, addend)
+  }
+
+  func reduce(bank: Bank, to: String) -> Money {
+    let rate: Int = bank.rate(from: currency, to: to)
+    return Money.init(amount: amount / rate, currency: to)
   }
 
 }
