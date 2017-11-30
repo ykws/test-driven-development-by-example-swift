@@ -15,10 +15,6 @@ class Money: Equatable {
     self.currency = currency
   }
 
-  func times(_ multiplier: Int) -> Money {
-    return Money.init(amount: amount * multiplier, currency: currency)
-  }
-
   // MARK: - Equatable
 
   static func == (lhs: Money, rhs: Money) -> Bool {
@@ -38,6 +34,10 @@ class Money: Equatable {
 }
 
 extension Money: Expression {
+
+  func times(_ multiplier: Int) -> Expression {
+    return Money.init(amount: amount * multiplier, currency: currency)
+  }
 
   func plus(_ addend: Expression) -> Expression {
     return Sum.init(self, addend)
